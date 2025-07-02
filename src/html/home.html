@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestionale Temp</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <div id="title"><h1>Gestionale 2025</h1></div>
+
+    <div class="main-box">
+      <button class="btn btn-primary">Crea Utente</button>
+      <button class="btn btn-secondary">Sfoglia Utente</button>
+    </div>
+
+    <div class="popup-overlay" id="userForm">
+      <div class="popup-content">
+        <h1>Anagrafica</h1>
+        <input
+          class="inputForm"
+          type="text"
+          id="nome"
+          autocomplete="off"
+          placeholder="Inserisci il nome"
+        />
+        <input
+          class="inputForm"
+          type="text"
+          id="cognome"
+          autocomplete="off"
+          placeholder="Inserisci il cognome"
+        />
+        <input
+          class="inputForm"
+          type="number"
+          id="eta"
+          autocomplete="off"
+          placeholder="Inserisci l'età Utente"
+        />
+        <input
+          class="inputForm"
+          type="text"
+          id="nazione"
+          autocomplete="off"
+          placeholder="Inserisci la Nazione"
+        />
+        <input
+          class="inputForm"
+          type="text"
+          id="indirizzo"
+          autocomplete="off"
+          placeholder="Inserisci l'indirizzo"
+        />
+        <input
+          class="inputForm"
+          type="text"
+          id="cap"
+          autocomplete="off"
+          placeholder="Inserisci il Codice Aviamento Postale"
+        />
+        <input
+          class="inputForm"
+          type="text"
+          id="comune"
+          autocomplete="off"
+          placeholder="Inserisci il Comune"
+        />
+        <input
+          class="inputForm"
+          type="text"
+          id="provincia"
+          autocomplete="off"
+          placeholder="Inserisci la provincia"
+        />
+
+        <div class="wrapButtonForm">
+            <button id="saveUser">Salva Utente</button>
+            <button id="closeWindowCreateUser">Close</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

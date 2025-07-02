@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f0f2f5;
+    font-family: Inter, sans-serif;
+    color: #333;
+}
+/* MAIN PAGE */
+#title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2f80ed;
+    text-align: center;
+    margin-top: 10px;
+}
+.main-box{
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.btn{
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-primary{
+    background-color: #2f80ed;
+    color: white;
+}
+
+.btn-secondary{
+    background-color: #27ae60;
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.btn:focus{
+    outline: 2px solid #2f80ed;
+    outline-offset: 2px;
+}
+
+
+/* ======================================================================= */
+
+
+/* POPUP CREAZIONE UTENTE */
+
+.popup-overlay{
+    position: fixed;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content{
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 850px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    gap: 50px;
+}
+
+.inputForm{
+    width: 100%;
+    max-width: 700px;
+    padding: 12px 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.inputForm:hover{
+    border-color: #999;
+}
+.inputForm:focus{
+    border-color: #2f80ed;
+    box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.2);
+}
+
+.wrapButtonForm{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.wrapButtonForm button{
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wrapButtonForm button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#saveUser{
+    background-color: #27ae60;
+    color: white;
+}
+
+#closeWindowCreateUser{
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* ======================================================================== */
