@@ -8,7 +8,7 @@ export function createUser() {
   const indirizzo = document.getElementById("indirizzo").value.trim();
   const cap = document.getElementById("cap").value.trim();
   const comune = document.getElementById("comune").value.trim();
-  const provincia = document.getElementById("provincia").value.trim();
+  const provincia = document.getElementById("provincia").value.toUpperCase().trim();
 
   const user = {
     nome,
@@ -55,9 +55,11 @@ export function mostraUtenti() {
       if (details.classList.contains("show")) {
         details.classList.remove("show");
         toggleBtn.textContent = "+";
+        toggleBtn.style.backgroundColor = "#27ae60"
       } else {
         details.classList.add("show");
         toggleBtn.textContent = "-";
+        toggleBtn.style.backgroundColor = "#e74c3c"
       }
     });
 

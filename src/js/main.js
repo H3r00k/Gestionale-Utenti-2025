@@ -32,5 +32,7 @@ btnChoseUser.addEventListener("click", () => {
 
 
 btnCloseSfogliaUtente.addEventListener("click", () => {
+    
     closePop(popupSfoglia);
+    
 })
