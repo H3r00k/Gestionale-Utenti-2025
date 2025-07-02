@@ -147,4 +147,30 @@ body{
     color: white;
 }
 
+/* miniPopup */
+.popup-toast{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.9s ease;
+    z-index: 2000;
+    display: none;
+
+}
+
+.popup-toast img{
+    width: 30px;
+}
+
+.popup-toast-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 /* ======================================================================== */

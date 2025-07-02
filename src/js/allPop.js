@@ -21,3 +21,13 @@ export function resetForm(popupElement){
         
     }
 }
+
+export function showSuccessToast(){
+    const toast = document.getElementById("popupSuccess");
+    createPopShow(toast);
+
+    setTimeout(() => {
+        closePop(toast);
+    }, 2000);
+
+}
