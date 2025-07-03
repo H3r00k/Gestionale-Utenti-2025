@@ -9,11 +9,42 @@ export function validateUserForm(formElement) {
     // Reset di base
     input.style.borderColor = "#ccc";
 
+    //Nome gestito com un messaggio
+    if (input.id === "nome") {
+      const nomeError = document.getElementById("nome-error");
+
+      if (value.length < 2) {
+        input.style.borderColor = "red";
+        nomeError.textContent = "Inserisci un nome di almeno 2 caratteri!";
+        nomeError.style.display = "block";
+        isValid = false;
+      } else if (!isNaN(value)) {
+        input.style.borderColor = "red";
+        nomeError.textContent = "Il nome non può essere un numero!";
+        nomeError.style.display = "block";
+        isValid = false;
+      } else if (/[^a-zA-ZàèéìòùÀÈÉÌÒÙ\s']/g.test(value)) {
+        input.style.borderColor = "red";
+        nomeError.textContent = "Il nome non può contenere caratteri speciali!";
+        nomeError.style.display = "block";
+        isValid = false;
+      }else {
+        nomeError.textContent = "";
+        nomeError.style.display = "none";
+        input.style.borderColor = "#ccc";
+      }
+    }
+
     // Età: gestita con messaggio
     if (input.id === "eta") {
       const etaError = document.getElementById("eta-error");
 
-      if (value === "" || isNaN(value) || Number(value) <= 0 || Number(value) > 100) {
+      if (
+        value === "" ||
+        isNaN(value) ||
+        Number(value) <= 0 ||
+        Number(value) > 100
+      ) {
         input.style.borderColor = "red";
         etaError.textContent = "Inserisci un'età valida (1-100)";
         etaError.style.display = "block";
