@@ -27,6 +27,7 @@ export function createUser() {
 
 export function mostraUtenti() {
   for (let i = 0; i < utenti.length; i++) {
+    userList.innerHTML = "";
     const user = utenti[i];
     const userEntry = document.createElement("div");
     const details = document.createElement("div");

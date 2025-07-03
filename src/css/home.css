@@ -233,3 +233,10 @@ POPUP ELENCO UTENTI
 #closeUserBrowser:hover{
     background-color: #ff1900;
 }
+
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: none;
+}

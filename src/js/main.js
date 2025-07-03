@@ -3,6 +3,7 @@ import { createPopShow } from "./allPop.js";
 import { resetForm } from "./allPop.js";
 import { closePop } from "./allPop.js";
 import { showSuccessToast } from "./allPop.js";
+import { validateUserForm } from "./formValidation.js";
 
 
 const btnCreateUser = document.querySelector(".btn-primary");
@@ -20,6 +21,8 @@ btnClosePopUser.addEventListener("click", () => {
 });
 
 btnSaveUser.addEventListener("click", () => {
+  const formValid = validateUserForm(userForm);
+  if (!formValid) return;
   createUser();
   showSuccessToast();
   resetForm(userForm)
